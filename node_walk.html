@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="process_node.js"></script>
+    <script src="visit_nodes_iterative.js"></script>
+    <script src="visit_nodes_recursive.js"></script>
+</head>
+<body>
+    <h1>testing</h1>
+
+    <p>Open your browser’s console to view results.</p>
+
+    <!--
+        This is just some placeholder content in order to represent a simple
+        node hierarchy. For more comprehensive tests you can try:
+
+        1. Using a more realistic HTML document, such as a web page from a site
+           you're familiar with.
+
+        2. Writing a script to automatically generate a random hierarchy on page
+           load. This can be used to create artifically huge and complicated
+           hierarchies which will thoroughly stress test each approach.
+    -->
+    <div style="display: none;">
+        foo
+        <div>
+            foo
+            <div>
+                foo
+                <div>
+                    foo bar
+                </div>
+            </div>
+        </div>
+        <div>
+            bar
+        </div>
+        bar
+    </div>
+
+    <script src="lodash.js"></script>
+    <script src="benchmark.js"></script>
+    <script src="benchmark-dom-walking.js"></script>
+</body>
+</html>
